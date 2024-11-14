@@ -38,7 +38,6 @@ jobs:
 
       - name: Create .nojekyll File
         run: touch ./out/.nojekyll
-        working-directory: ./ui
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.5
