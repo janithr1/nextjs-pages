@@ -1,43 +1,43 @@
-// import { digital_right_pillar_definitions } from "../../database/processed/db.json";
+import { digital_right_pillar_definitions } from "../../database/processed/db.json";
 
-const digital_right_pillar_definitions =[
-    {
-        "Pillar": "Cross-Cutting Indicators",
-        "ColorBase": "#A75417",
-        "ColorTriple1": "#FFF",
-        "ColorTriple2": "#ffab8a",
-        "ColorTriple3": "#DE1568",
-        "colorMap": "stroke-pillar-dpinfrastructure"
-    },
-    {
-        "Pillar": "Freedom of Expression, Assembly and Association",
-        "ColorBase": "#9C27B0",
-        "ColorTriple1": "#FFF",
-        "ColorTriple2": "#a2e0f5",
-        "ColorTriple3": "#517Ce8",
-        "colorMap": "stroke-pillar-connectivity"
-    },
-    {
-        "Pillar": "Right to Privacy",
-        "ColorBase": "#887F13",
-        "ColorTriple1": "#FFF",
-        "ColorTriple2": "#ffd796",
-        "ColorTriple3": "#ed4b00",
-        "colorMap": "stroke-pillar-regulation"
-    },
-    {
-        "Pillar": "Right to Equality and Non-Discrimination",
-        "ColorBase": "#17A79C",
-        "ColorTriple1": "#FFF",
-        "ColorTriple2": "#e7ff87",
-        "ColorTriple3": "#02965d",
-        "colorMap": "stroke-pillar-government"
-    }
-]
+// const digital_right_pillar_definitions =[
+//     {
+//         "Pillar": "Cross-Cutting Indicators",
+//         "ColorBase": "#A75417",
+//         "ColorTriple1": "#FFF",
+//         "ColorTriple2": "#ffab8a",
+//         "ColorTriple3": "#DE1568",
+//         "colorMap": "stroke-pillar-dpinfrastructure"
+//     },
+//     {
+//         "Pillar": "Freedom of Expression, Assembly and Association",
+//         "ColorBase": "#9C27B0",
+//         "ColorTriple1": "#FFF",
+//         "ColorTriple2": "#a2e0f5",
+//         "ColorTriple3": "#517Ce8",
+//         "colorMap": "stroke-pillar-connectivity"
+//     },
+//     {
+//         "Pillar": "Right to Privacy",
+//         "ColorBase": "#887F13",
+//         "ColorTriple1": "#FFF",
+//         "ColorTriple2": "#ffd796",
+//         "ColorTriple3": "#ed4b00",
+//         "colorMap": "stroke-pillar-regulation"
+//     },
+//     {
+//         "Pillar": "Right to Equality and Non-Discrimination",
+//         "ColorBase": "#17A79C",
+//         "ColorTriple1": "#FFF",
+//         "ColorTriple2": "#e7ff87",
+//         "ColorTriple3": "#02965d",
+//         "colorMap": "stroke-pillar-government"
+//     }
+// ]
 
 export default function handler(req, res) {
     const { pillar } = req.query;
-
+    console.log('ddd',pillar)
     if (!pillar) {
       res.status(400).json({ message: "Pillar is required" });
       return;
