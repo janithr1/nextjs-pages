@@ -92,7 +92,7 @@ export default function Home() {
         </div>
 
         <div className={styles.stages}>
-          <h2>Initial Ones {selectedPillar}:</h2>
+          <h2>Initial Filter {selectedPillar}:</h2>
           <ul>
             {stagesDemo.length > 0 ? (
               stagesDemo.map((stage, index) => (
