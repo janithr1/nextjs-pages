@@ -64,7 +64,7 @@ export default function Home() {
         >
           Powered by{" "}
           <span className={styles.logo}>
-            <Image src={logo} alt="Vercel Logo" width={72} height={16} />
+            <Image src={'/nextjs-pages/vercel.svg'} alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
       </footer>
